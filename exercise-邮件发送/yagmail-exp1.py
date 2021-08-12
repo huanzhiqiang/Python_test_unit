@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # _*_ coding:utf-8 _*_
 """
-@author: huanzhiqiang  
+@author: XXXXXX  
 @file: yagmail-exp1.py  
 @time: 2019/10/15 14:13
 """
@@ -15,12 +15,12 @@ from email.header import Header
 #设置smtplib所需的参数
 #下面的发件人，收件人是用于邮件传输的。
 smtpserver = 'smtp.163.com'
-username = 'whyyour88@163.com'
-password='HuNu6KisjDLk163'
-sender='whyyour88@163.com'
+username = 'wXXXXXX@163.com'
+password='XXXXXXXXX'
+sender='XXXXXX@163.com'
 #receiver='XXX@126.com'
 #收件人为多个收件人
-receiver=['961502365@qq.com','67785783@qq.com']
+receiver=['XXXXXXX@qq.com','XXXXX@qq.com']
 
 
 subject = 'plase email see'
@@ -32,7 +32,7 @@ subject = 'plase email see'
 #下面的主题，发件人，收件人，日期是显示在邮件页面上的。
 msg=MIMEMultipart('mixed')
 msg['Subject']=subject
-msg['From']='whyyour88@163.com'
+msg['From']='XXXXXXXXX@163.com'
 # msg['To']='962502365@qq.com'
 #收件人为多个收件人,通过join将列表转换为以;为间隔的字符串
 msg['To']=";".join(receiver)
