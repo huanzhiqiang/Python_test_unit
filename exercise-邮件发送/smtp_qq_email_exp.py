@@ -26,7 +26,7 @@ msg['To']=";".join(receiver)
 
 
 #构造文字内容
-text = "Hi!\n北航财票接口不可用了！\n请查看相关接口是否在线:\nhttp://192.168.0.242:9081/Ninvoicejs/service/invoice?wsdl"
+text = "Hi!\nXXXX接口不可用了！\n请查看相关接口是否在线:\nhttp://192.168.0.3:9081/Ninvoicejs/serve/invoice?wsdl"
 text_plain = MIMEText(text,'plain', 'utf-8')
 msg.attach(text_plain)
 
@@ -35,8 +35,8 @@ html = """
   <head></head>
   <body>
     <p>Hi!<br>
-       How are you?<br>
-       Here is the <a href="http://www.baidu.com">link</a> you wanted.<br>
+       Warning content:<br>
+       Interface information: <a href="http://www.baidu.com">link</a> No more.<br>
     </p>
   </body>
 </html>
